@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_aurora_kddi.mk
+    $(LOCAL_DIR)/afterlife_aurora_kddi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_aurora_kddi-user \
-    lineage_aurora_kddi-userdebug \
-    lineage_aurora_kddi-eng
+    afterlife_aurora_kddi-user \
+    afterlife_aurora_kddi-userdebug \
+    afterlife_aurora_kddi-eng
