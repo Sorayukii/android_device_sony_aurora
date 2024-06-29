@@ -8,9 +8,9 @@
 $(call inherit-product, device/sony/aurora_kddi/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
-PRODUCT_NAME := lineage_aurora_kddi
+PRODUCT_NAME := superior_aurora_kddi
 PRODUCT_DEVICE := aurora_kddi
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
@@ -18,6 +18,10 @@ PRODUCT_MODEL := Xperia XZ2 Premium
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
+
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+BUILD_WITH_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
