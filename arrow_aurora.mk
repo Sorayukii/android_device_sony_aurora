@@ -8,12 +8,12 @@
 $(call inherit-product, device/sony/aurora/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Setup keystore
 -include vendor/lineage-priv/keys/keys.mk
 
-PRODUCT_NAME := lineage_aurora
+PRODUCT_NAME := arrow_aurora
 PRODUCT_DEVICE := aurora
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
@@ -22,6 +22,8 @@ PRODUCT_MODEL := Xperia XZ2 Premium
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 TARGET_DISABLE_EPPE := true
+
+ARROW_GAPPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
