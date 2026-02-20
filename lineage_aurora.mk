@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Setup keystore
 -include vendor/lineage-priv/keys/keys.mk
 
-PRODUCT_NAME := lineage_aurora
+PRODUCT_NAME := rising_aurora
 PRODUCT_DEVICE := aurora
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
@@ -22,6 +22,11 @@ PRODUCT_MODEL := Xperia XZ2 Premium
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 TARGET_DISABLE_EPPE := true
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_USE_PIXEL_FINGERPRINT := false
+
+RISING_CHIPSET := "snapdragon 845"
+RISING_MAINTAINER := "ivy"
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
